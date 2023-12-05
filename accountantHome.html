@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>root</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            <!-- body {
+                background-color: green;
+                font-size: x-large;
+                font-family: Verdana, Arial, sans-serif;
+            }
+
+            p label input {
+                font-size: xx-large;
+            }
+            span{
+                color:red;
+            }
+            #azul{
+                color:blanchedalmond;
+            }
+
+            --> </style>
+    </head>
+    <body>
+        <p>You are connected to the Project 4 Enterprise System database as a <span>accountant-level</span> user.</p>
+        <p> Please enter any SQL query or update command in the box below.</p>
+        <form action= "" method = "post">
+         <input type = "radio" id ="maxStatus">
+        <label for ="maxStatus"><span id = "azul"> Get the Maximum Status Value of All Suppliers</span> (Returns a maximum value) </label>
+        <br>
+             <input type = "radio" id ="sumParts">
+        <label for ="sumParts"><span id = "azul"> Get the Total Weight of all parts</span> (Returns a sum) </label>
+        <br>
+             <input type = "radio" id ="totalShipments">
+        <label for ="totalShipments"><span id = "azul"> Get the Total Number of Shipments</span> (Returns the current number of shipments in total) </label>
+        <br>
+             <input type = "radio" id ="nameNumber">
+        <label for ="nameNumber"><span id = "azul"> Get the Name and Number of Workers of the Job with the Most Workers</span> (Returns two values) </label>
+        <br>
+             <input type = "radio" id ="listSupplier">
+        <label for ="listSupplier"><span id = "azul"> List the Name and Status of Every Supplier</span> (Returns a list of supplier names with status) </label>
+        <br>
+        <input type="button" id ="executeRadio" value= "Execute Command">
+        <input type="button" id= "clearResults" value = "Clear Results">
+            <br>
+        </form>
+        <p> All execution results will appear below this line.</p>
+        <br>
+        <textarea id ="results" name = "results" rows = "3" cols = "25"></textarea>
+    </body>
+        </html>

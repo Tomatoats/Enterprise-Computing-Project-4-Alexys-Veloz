@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>data-entry</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            <!-- body {
+                background-color: green;
+                font-size: x-large;
+                font-family: Verdana, Arial, sans-serif;
+            }
+
+            p label input {
+                font-size: xx-large;
+            }
+            span{
+                color:red;
+            }
+            
+
+            --> </style>
+    </head>
+    <body>
+        <p>You are connected to the Project 4 Enterprise System database as a <span>data-entry-level</span> user.</p>
+        <p> Enter the data values in a form below to add a new record to the corresponding database table.</p>
+        
+        
+        <form action= "" method = "post">
+            <p>Suppliers Record Insert</p>
+        <table>
+            <tr>
+            <th>snum</th>
+            <th>sname</th>
+            <th>status</th>
+            <th>city</th>
+            </tr>
+            <tr>
+            <td><input type = "text" name = "snumTyped"/> </td>
+            <td><input type = "text" name = "snameTyped"/> </td>
+            <td><input type = "text" name = "statusTyped"/> </td>
+            <td><input type = "text" name = "suppliesCityTyped"/> </td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id ="supplierEntered" value= "Enter Supplier Record into Database">
+        <input type="button" id= "clearSuppliesResults" value = "Clear Data and Results">
+            <br>
+        </form>
+        
+        <form action= "" method = "post">
+            <p>Parts Record Insert</p>
+        <table>
+            <tr>
+            <th>pnum</th>
+            <th>pname</th>
+            <th>color</th>
+            <th>weight</th>
+            <th>city</th>
+            </tr>
+            <tr>
+            <td><input type = "text" name = "pnumTyped"/> </td>
+            <td><input type = "text" name = "pnameTyped"/> </td>
+            <td><input type = "text" name = "colorTyped"/> </td>
+            <td><input type = "text" name = "weightTyped"/> </td>
+            <td><input type = "text" name = "partsCityTyped"/> </td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id ="enterParts" value= "Enter Part Record Into Database">
+        <input type="button" id= "clearPartsResults" value = "Clear Data and Results">
+            <br>
+        </form>
+        
+        <form action= "" method = "post">
+            <p>Jobs Record Insert</p>
+        <table>
+            <tr>
+            <th>jnum</th>
+            <th>jname</th>
+            <th>numworkers</th>
+            <th>city</th>
+            </tr>
+            <tr>
+            <td><input type = "text" name = "jnumTyped"/> </td>
+            <td><input type = "text" name = "jnameTyped"/> </td>
+            <td><input type = "text" name = "numworkersTyped"/> </td>
+            <td><input type = "text" name = "jobsCityTyped"/> </td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id ="jobsEntered" value= "Enter Job Record into Database">
+        <input type="button" id= "clearJobsResults" value = "Clear Data and Results">
+            <br>
+        </form>
+        
+        
+        <form action= "" method = "post">
+            <p>Shipments Record Insert</p>
+        <table>
+            <tr>
+            <th>snum</th>
+            <th>pnum</th>
+            <th>jnum</th>
+            <th>quantity</th>
+            </tr>
+            <tr>
+            <td><input type = "text" name = "snumTyped"/> </td>
+            <td><input type = "text" name = "pnumTyped"/> </td>
+            <td><input type = "text" name = "jnumTyped"/> </td>
+            <td><input type = "text" name = "quantityTyped"/> </td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id ="shipmentEntered" value= "Enter Shipment Record into Database">
+        <input type="button" id= "clearShipmentsResults" value = "Clear Data and Results">
+            <br>
+        </form>
+        
+        <p> All execution results will appear below this line.</p>
+        <br>
+        <textarea id ="results" name = "results" rows = "3" cols = "25"></textarea>
+    </body>
+        </html>
